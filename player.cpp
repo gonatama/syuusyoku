@@ -8,7 +8,7 @@
 #include "camera.h"
 #include "input.h"
 #include "shadow.h"
-#include "debugproc.h"
+//#include "debugproc.h"
 #include "physics.h"
 #include "meshfield.h"
 
@@ -655,21 +655,21 @@ void UpdatePlayer(void)
 	SetVertexShadow(IdxShadow, SizeShadow, SizeShadow);
 	SetColorShadow(IdxShadow, colShadow);
 
-	PrintDebugProc("[飛行機の位置  ：(%f : %f : %f)]\n", player->posPlayer.x, player->posPlayer.y, player->posPlayer.z);
-	PrintDebugProc("[飛行機の向き  ：(%f) < 目的の向き:(%f) >]\n", player->rotPlayer.y, player->rotDestPlayer.y);
-	PrintDebugProc("[飛行機の向き  ：(%d)\n", player->hit );
+	//PrintDebugProc("[飛行機の位置  ：(%f : %f : %f)]\n", player->posPlayer.x, player->posPlayer.y, player->posPlayer.z);
+	//PrintDebugProc("[飛行機の向き  ：(%f) < 目的の向き:(%f) >]\n", player->rotPlayer.y, player->rotDestPlayer.y);
+	//PrintDebugProc("[飛行機の向き  ：(%d)\n", player->hit );
 
-	PrintDebugProc("\n");
+	//PrintDebugProc("\n");
 
-	PrintDebugProc("*** 飛行機操作 ***\n");
-	PrintDebugProc("前移動 : ↑\n");
-	PrintDebugProc("後移動 : ↓\n");
-	PrintDebugProc("左移動 : ←\n");
-	PrintDebugProc("右移動 : →\n");
-	PrintDebugProc("上昇   : Ｉ\n");
-	PrintDebugProc("下降   : Ｋ\n");
-	PrintDebugProc("左旋回 : LSHIFT\n");
-	PrintDebugProc("右旋回 : RSHIFT\n");
+	//PrintDebugProc("*** 飛行機操作 ***\n");
+	//PrintDebugProc("前移動 : ↑\n");
+	//PrintDebugProc("後移動 : ↓\n");
+	//PrintDebugProc("左移動 : ←\n");
+	//PrintDebugProc("右移動 : →\n");
+	//PrintDebugProc("上昇   : Ｉ\n");
+	//PrintDebugProc("下降   : Ｋ\n");
+	//PrintDebugProc("左旋回 : LSHIFT\n");
+	//PrintDebugProc("右旋回 : RSHIFT\n");
 
 }
 

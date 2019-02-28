@@ -14,7 +14,7 @@
 #include "shadow.h"
 #include "billboard.h"
 //#include "tree.h"
-#include "debugproc.h"
+//#include "debugproc.h"
 #include "particle.h"
 #include "particle2.h"
 #include "physics.h"
@@ -295,7 +295,7 @@ HRESULT Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	InitInput(hInstance, hWnd);
 
 	// デバッグ表示処理の初期化
-	InitDebugProc();
+	//InitDebugProc();
 
 	// ライトの初期化
 	InitLight();
@@ -361,7 +361,7 @@ void Uninit(void)
 	UninitInput();
 	
 	// デバッグ表示処理の終了処理
-	UninitDebugProc();
+	//UninitDebugProc();
 
 	//フィールドの終了処理
 	//UninitField();
@@ -420,7 +420,7 @@ void Update(void)
 	//}
 	UpdateParticle2();
 
-	UpdateDebugProc();
+	//UpdateDebugProc();
 }
 
 //=============================================================================
@@ -447,14 +447,14 @@ void Draw(void)
 
 		DrawBillboard();
 		// エネミー
-		DrawEnemy();
+		//DrawEnemy();
 
 		// モデルの描画処理
 		DrawPlayer();
 
 		//DrawParticle2();
 
-		DrawDebugProc();
+		//DrawDebugProc();
 
 #ifdef _DEBUG
 		// FPS表示
